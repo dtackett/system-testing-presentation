@@ -50,11 +50,19 @@
 				<section>
 					<h1>What</h1>
 					<ul>
-						<li class="fragment">Exercise requirements of the system like an end user</li>
+						<li class="fragment">High level tests</li>
+						<li class="fragment">Test the interaction of the entire system</li>
+						<li class="fragment">Exercise requirements of the system like an end user</li>						
+						<li class="fragment">Acceptance Criteria</li>
 						<li class="fragment">Must be runnable in an environment that mirrors production</li>
-				    <li class="fragment">Test the interaction of the entire system</li>
 					</ul>
 				</section>
+
+				<section>
+					<h2>Test Pyramid</h2>				
+					<p style="background-color:white;"><img src="http://watirmelon.files.wordpress.com/2012/01/idealautomatedtestingpyramid.png?w=584&h=475"/></p>
+					<p>source: http://watirmelon.com/2012/01/31/introducing-the-software-testing-ice-cream-cone/</p>
+				</section>				
 
 				<section>
 				  <h2>How</h2>
@@ -78,7 +86,7 @@
 					<h2>Where</h2>
 					<ul>
 						<li class="fragment">Convienent to run on developer machines but not sufficient</li>
-						<li class="fragment">Must run in environments that mirror production</li>
+						<li class="fragment">Must run on environments that mirror production</li>
 						<li class="fragment">Totem will automate running these as part of the flow</li>
 					</ul>
 			  </section>
@@ -103,8 +111,8 @@
 				<section>
 					<h2>Already Started</h2>
 					<ul>
-				    <li>Truett's presentation on how System Tests were implemented on the iOS Limited Familiarity App</li>
-				    <li>Adam and Alex's presentation on how System Tests were implemented on the Valcyte survey</li>
+				    <li>Truett presented how System Tests were implemented on iOS Limited Familiarity App</li>
+				    <li>Adam and Alex presented how System Tests were implemented on the Valcyte survey</li>
 				  </ul>
 				</section>  				
 
@@ -113,6 +121,7 @@
 					<ul>
 				  	<li class="fragment">Don't put blind faith in automated tests</li>
 				  	<li class="fragment">Individual machines and test environments are not production</li>
+				  	<li class="fragment">When a system test fails this means there is a missing test elsewhere in your system</li>
 				  </ul>
 				</section>
 
