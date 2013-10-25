@@ -65,6 +65,61 @@
 				</section>				
 
 				<section>
+					<section>
+						<h3>System Test Examples from gCampaign</h3>
+					</section>
+
+					<section>
+						<h3>Helper Functions</h3>
+						<pre><code data-trim>loginPass(username, password)</code></pre>
+						<ul>
+							<li>Navigates to the root of the application</li>
+							<li>Finds the authentication form</li>
+							<li>Fills in username/password</li>
+							<li>Submits form</li>
+							<li>Asserts login was successful</li>
+						</ul>
+					</section>
+
+					<section>
+						<pre><code data-trim>addCampaign_pass(campagin)</code></pre>
+						<ul>
+							<li>Navigates to the add campaign page</li>
+							<li>Fills out the add campaign based on the given campaign</li>
+							<li>Submits form</li>
+							<li>Asserts creation was successful</li>
+						</ul>
+					</section>
+
+					<section>
+						<pre><code data-trim>addCampaign_fail(campagin)</code></pre>
+						<ul>
+							<li>Navigates to the add campaign page</li>
+							<li>Fills out the add campaign based on the given campaign</li>
+							<li>Submits form</li>
+							<li>Asserts creation failed</li>
+						</ul>						
+					</section>
+
+
+					<section>
+						<h3>Successful Campaign Add</h3>
+						<pre><code data-trim>
+loginPass("admin", "test-admin-pass");
+addCampaign_pass(campaigns.valid_campaign);
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Bad Campaign Add</h3>
+						<pre><code data-trim>
+loginPass("admin", "test-admin-pass");
+addCampaign_fail(campaigns.empty);
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
 				  <h2>How</h2>
 				  <ul>
 				  	<li class="fragment">With the code base but not <em>part</em> of the software</li>
@@ -113,6 +168,7 @@
 					<ul>
 				    <li>Truett presented how System Tests were implemented on iOS Limited Familiarity App</li>
 				    <li>Adam and Alex presented how System Tests were implemented on the Valcyte survey</li>
+				    <li>Suite of Selenium tests on gCampaign</li>
 				  </ul>
 				</section>  				
 
